@@ -11,14 +11,13 @@ var reversedWord="";
 
 // giri la parola
 
-for (i = word.length-1; i >= 0; i--) {
+for (var i = word.length-1; i >= 0; i--) {
     // riempire la variabile reversedWord 
     console.log("la parola è composta da " + word[i]);
-    reversedWord += word[i];
-    console.log(reversedWord)
-    // reverseWord.push(word[i]) <--- NO!! solo con array
-    // reverseWord += lettera...
+    reversedWord = word[i];
+    // questo fa in modo che dentro a reversedWord finiscano le singole lettere (della parola inseria), al contrario (grazie al ciclo for che fa il giro al "contrario"), e tutte insieme. Se non mettessi += verrebbe fuori solo la prima lettera girata cioè la P.
 }
+console.log(reversedWord)
 
 if (word == reversedWord) {
     alert("palindromo")
