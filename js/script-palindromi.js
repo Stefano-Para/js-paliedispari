@@ -1,28 +1,32 @@
 // 1 - Palindroma
 // Chiedere all'utente di inserire una parola
-var input = prompt("Inserisci una parola a tuo scelta: Scopri se è un palindromo!");
-console.log("questa è la parola inserita: " + input);
-
-// Creare una funzione per capire se la parola inserita è palindroma
-
-var array = [];
+var word = prompt("Inserisci qui una parola a tua scelta:");
+console.log(word)
+var reversedWord;
 
 
-var arrayFilled = array.push(input);
+// giri la parola
 
-console.log("Queste è il quantitativo di item contenuto in ARRAY dopo il push " + arrayFilled);
+for(i = word.length-1; i >= 0; i--) {
+    // riempire la variabile reversedWord 
+    console.log(word[i]);
 
-for (var i=0; i<array.length; i++) {
-    console.log(array)
-    var minuscolo = array.toLowerCase();
+    
+    
+    
 
+    // reverseWord.push(word[i]) <--- NO!! solo con array
+    // reverseWord += lettera...
 }
 
 
 
-
-
-
+// controllo se coincidono
+//if(word == reversedWord) {
+//     alert("hai scelto un palindromo.")
+// } else { 
+//     alert("non è un palindromo")
+// }
 
 
 
