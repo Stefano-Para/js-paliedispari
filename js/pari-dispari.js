@@ -1,15 +1,20 @@
 // 2 - Pari e Dispari
 // L'utente sceglie pari o dispari e inserisce un numero da 1 a 5.
-var evenOrOdd = prompt("\"pari\" o \"dispari\"?");
-console.log("Hai scelto: " + evenOrOdd)
 
-if (evenOrOdd !== "pari" || "dispari") {
-    alert("Hai inserito una parola non valida.")
-}
+var evenOrOdd = "";
+do {
+    evenOrOdd = prompt("\"pari\" o \"dispari\"?");
+    console.log("Hai scelto: " + evenOrOdd)
+} while (evenOrOdd != "pari" && evenOrOdd != "dispari")
 
+// DO WHILE mi sta dando un obbligo di rimanere nel ciclo (continuare a chiedere di scegliere pari o dispari) obbligandomi SOLO a poter scrivere le mie condizioni: o pari, o dispari.
 
-var numero = parseInt(prompt("Inserisci un numero da 1 a 5. "));
-console.log("Hai scelto: " + numero)
+// var numero = "";
+do {
+    numero = parseInt(prompt("Inserisci un numero da 1 a 5. "));
+    console.log("Hai scelto: " + numero)
+} while ((numero < 1) || (numero > 5))
+
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 
 function getRandom(min, max) {
