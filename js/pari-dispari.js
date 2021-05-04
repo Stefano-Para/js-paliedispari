@@ -3,6 +3,10 @@
 var evenOrOdd = prompt("\"pari\" o \"dispari\"?");
 console.log("Hai scelto: " + evenOrOdd)
 
+if (evenOrOdd !== "pari" || "dispari") {
+    alert("Hai inserito una parola non valida.")
+}
+
 
 var numero = parseInt(prompt("Inserisci un numero da 1 a 5. "));
 console.log("Hai scelto: " + numero)
